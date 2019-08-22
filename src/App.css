@@ -1,3 +1,40 @@
 .px-override {
     height: 90vh;
 }
+
+.px-override div {
+    background-size: cover;
+}
+
+.px-override div div {
+    height: 100%;
+    width: 50%; 
+}
+
+.px-left div {
+    border: 3px solid red;
+    justify-content: flex-start;
+}
+
+.px-right div {
+    border: 3px solid red;
+    justify-content: flex-end;
+}
+
+.px-right div div {
+    background: linear-gradient(
+        to left,
+        rgba(36, 49, 39, .97) 50%, 
+        rgba(36, 49, 39, .87), 
+        transparent 100%
+    );
+}
+
+.px-left div div {
+    background: linear-gradient(
+        to right,
+        rgba(36, 49, 39, .97) 50%, 
+        rgba(36, 49, 39, .87), 
+        transparent 100%
+    );
+}

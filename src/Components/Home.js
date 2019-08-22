@@ -1,5 +1,6 @@
 import React from 'react'
-import LazyHero from 'react-lazy-hero';
+import ParallaxLeft from './Modules/ParallaxLeft';
+import ParallaxRight from './Modules/ParallaxRight';
 
 export default class Home extends React.Component {
     state = {};
@@ -11,15 +12,11 @@ export default class Home extends React.Component {
     render(){
         return(
             <div>
-                <LazyHero className="px-override" transitionTimingFunction="ease-in-out" parallaxOffset="100" imageSrc="https://unsplash.it/2000/1000">
-                    <h1>Generic Startup Hype Headline</h1>
-                </LazyHero>
-                <LazyHero className="px-override" transitionTimingFunction="ease-in-out" parallaxOffset="100" imageSrc="https://unsplash.it/2000/1000">
-                    <h1>Generic Startup Hype Headline</h1>
-                </LazyHero>
-                <LazyHero className="px-override" transitionTimingFunction="ease-in-out" parallaxOffset="100" imageSrc="https://unsplash.it/2000/1000">
-                    <h1>Generic Startup Hype Headline</h1>
-                </LazyHero>
+                {/* @TODO replace with media from contentful */}
+                <ParallaxLeft img="https://thayerspringapts.com/wp-content/uploads/offset_770285_home-2560x1828.jpg"/>
+                <ParallaxRight img="https://thayerspringapts.com/wp-content/uploads/2019/02/ThayerSpring4710.jpg"/>
+                <ParallaxLeft img="https://thayerspringapts.com/wp-content/uploads/2019/03/SilverSpring_0447-e1553542895152.jpg"/>
+                <ParallaxRight img="https://thayerspringapts.com/wp-content/uploads/2019/02/ThayerSpring5016.jpg"/>
             </div>
         )
     }
